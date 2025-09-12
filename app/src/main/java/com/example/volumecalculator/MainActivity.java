@@ -40,5 +40,6 @@ public class MainActivity extends AppCompatActivity {
         MyCustomAdapter adapter = new MyCustomAdapter(shapeArrayList, MainActivity.this);
 
         gridView.setAdapter(adapter);
+        gridView.setNumColumns(2);
     }
 }
