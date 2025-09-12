@@ -5,11 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.google.android.material.imageview.ShapeableImageView;
 
 import java.util.ArrayList;
 
@@ -25,7 +26,7 @@ public class MyCustomAdapter extends ArrayAdapter<Shape> {
 
     private static class MyViewHolder {
         TextView shapeName;
-        ImageView shapeImage;
+        ShapeableImageView shapeImage;
     }
 
     @NonNull
@@ -38,7 +39,7 @@ public class MyCustomAdapter extends ArrayAdapter<Shape> {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.grid_item_layout, parent, false);
             myViewHolder.shapeName = (TextView) convertView.findViewById(R.id.textView);
-            myViewHolder.shapeImage = (ImageView) convertView.findViewById(R.id.imageView);
+            myViewHolder.shapeImage = (ShapeableImageView) convertView.findViewById(R.id.imageView);
             convertView.setTag(myViewHolder);
         } else {
             myViewHolder = (MyViewHolder) convertView.getTag();
