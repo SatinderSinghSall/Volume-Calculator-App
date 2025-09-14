@@ -25,12 +25,15 @@ An Android application that helps you **calculate volumes of common 3D shapes** 
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots & Previews
 
-```markdown
-![Home Screen](screenshots/home.png)
-![Shape Selection](screenshots/shape_selection.png)
-```
+### Home Screen
+
+![Home Screen](app/src/main/res/drawable/home_screen.png)
+
+### Sphere Screen
+
+![Sphere Screen](app/src/main/res/drawable/sphere_screen.png)
 
 ---
 
