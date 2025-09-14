@@ -33,7 +33,10 @@ public class SphereActivity extends AppCompatActivity {
         button_CalculateResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SphereActivity.this, "Testing...", Toast.LENGTH_SHORT).show();
+                String radius = editText_UserInput.getText().toString().trim();
+                int radius_int = Integer.parseInt(radius);
+                double volume = (4 / 3) * 3.14159 * radius_int * radius_int * radius_int;
+                textView_Result.setText("Volume: " + volume + "m^3");
             }
         });
     }
